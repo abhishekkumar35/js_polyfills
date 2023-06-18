@@ -1,0 +1,24 @@
+{
+  "name": "jspolyfills",
+  "version": "1.0.0",
+  "description": "",
+  "main": "map_polyfill.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon polyfills.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhishekkumar35/js_polyfills.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhishekkumar35/js_polyfills/issues"
+  },
+  "homepage": "https://github.com/abhishekkumar35/js_polyfills#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
