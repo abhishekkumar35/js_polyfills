@@ -65,4 +65,40 @@ const reducedArrayValue = array.reducep((acc, curr) => {
 });
 console.log(reducedArrayValue);
 
-//console.log("null+10", null + 10);
+//some
+Array.prototype.some = function (callback) {
+  const array = this;
+  let flag = false;
+  for (let i = 0; i < array.length; i++) {
+    if (callback(array[i])) {
+      flag = true;
+      break;
+    }
+  }
+  return flag;
+};
+
+//some example
+const value = array.some((item) => {
+  return item > 4;
+});
+console.log(value);
+
+//every
+Array.prototype.some = function (callback) {
+  const array = this;
+  let flag = true;
+  for (let i = 0; i < array.length; i++) {
+    if (!callback(array[i])) {
+      flag = false;
+      break;
+    }
+  }
+  return flag;
+};
+
+//every example
+const every = array.every((item) => {
+  return item > 4;
+});
+console.log(every);
